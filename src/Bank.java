@@ -4,9 +4,9 @@ public class Bank {
     private double balance;
     private String name;
     private String email;
-    private long number;
+    private String number;
 
-    public Bank(int accountNumber, double balance, String name, String email, long number) {
+    public Bank(int accountNumber, double balance, String name, String email, String number) {
         this.accountNumber = accountNumber;
         this.balance = balance;
         this.name = name;
@@ -63,11 +63,11 @@ public class Bank {
         this.email = email;
     }
 
-    public long getNumber() {
+    public String getNumber() {
         return number;
     }
 
-    public void setNumber(long number) {
+    public void setNumber(String number) {
         this.number = number;
     }
 
