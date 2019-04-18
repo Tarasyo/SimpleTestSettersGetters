@@ -4,11 +4,14 @@ public class Bank {
     private double balance;
     private String name;
     private String email;
-    private int number;
+    private long number;
 
-    public Bank(int accountNumber, double balance, String name) {
-
-
+    public Bank(int accountNumber, double balance, String name, String email, long number) {
+        this.accountNumber = accountNumber;
+        this.balance = balance;
+        this.name = name;
+        this.email = email;
+        this.number = number;
     }
 
     public void deposit(double add){
@@ -60,11 +63,11 @@ public class Bank {
         this.email = email;
     }
 
-    public int getNumber() {
+    public long getNumber() {
         return number;
     }
 
-    public void setNumber(int number) {
+    public void setNumber(long number) {
         this.number = number;
     }
 
