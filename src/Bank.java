@@ -5,6 +5,12 @@ public class Bank {
     private String name;
     private String email;
     private String number;
+    public Bank(){
+
+        this(0,00.00, "Default name", "Default email", "-");
+
+    }
+
 
     public Bank(int accountNumber, double balance, String name, String email, String number) {
         this.accountNumber = accountNumber;
